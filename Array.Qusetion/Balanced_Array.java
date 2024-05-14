@@ -1,6 +1,6 @@
 public class Balanced_Array {
     public static void main(String[] args) {
-        long [] arr = {1, 5, 3, 2};
+        long [] arr = {8, 5, 3, 2};
         System.out.println(minValueToBalance(arr, 4));
     }
     public static long minValueToBalance(long a[] ,int n)
