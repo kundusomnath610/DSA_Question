@@ -1,9 +1,8 @@
 import java.util.Arrays;
-
 public class count_reapeted_Number {
     public static void main(String[] args) {
-        int [] arr = {8,8,3,1,5,4,9};
-        System.out.println(reapeteNum(arr, 8 ));
+        int [] arr = {1,2,3,3,4,5};
+        System.out.println(reapeteNum(arr, 3 ));
     }
 
     public static int reapeteNum(int arr[], int target) {
