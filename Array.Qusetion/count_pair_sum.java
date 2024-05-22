@@ -27,3 +27,8 @@ public class count_pair_sum {
 
     
 }
+
+/*
+ *  Time Complexity :: O(M+N)
+ *  Space Complexity:: O(1)
+ */
