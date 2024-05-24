@@ -23,9 +23,8 @@ public class count_pair_sum {
           }
         }
         return c;  // Return the total count of pairs
-    }
+    }   
 
-    
 }
 
 /*
