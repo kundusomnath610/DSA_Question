@@ -26,15 +26,18 @@ public class Wave_Array {
     }
 
     public static void convertToWave(int n, int[] arr) {
-        for(int i=0; i < n - 1; i= i+2) {
+        // Loop through the array with a step of 2
+        for(int i = 0; i < n - 1; i = i + 2) {
+            // Swap the elements at index i and i+1
             int temp = arr[i];
-            arr[i] = arr[i+1];
-            arr[i+1] = temp;
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
         }
     }
+    
 }
 
 /*
  * Time Complexity :: O(n)
- * Space Complexity :: O(n)
+ * Space Complexity :: O(1)
  */
