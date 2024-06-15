@@ -5,7 +5,7 @@ public class check_Array_Sorted_Or_Not {
     }
         public static boolean arraySortedOrNot(int[] arr, int n) {
             for(int i=1; i < n; i++) {
-                if(arr[i] < arr[i - 1]) {
+                if(arr[i] < arr[i++]) {
                     return false;
                 }
             }
