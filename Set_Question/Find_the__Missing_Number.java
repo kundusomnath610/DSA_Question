@@ -1,8 +1,10 @@
+package Set_Question;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Find_missing_in_second_array {
+public class Find_the__Missing_Number {
     public static void main(String[] args) {
         int [] array = {1,2,3,4,5,10};
         int [] array1 = {2,3,1,0,5};
