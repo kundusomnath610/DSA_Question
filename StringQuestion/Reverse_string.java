@@ -1,6 +1,6 @@
 public class Reverse_string {
     public static void main(String[] args) {
-        String str = "Somnathkundu";
+        String str = "Somnath";
         System.out.println(reverseWord(str));
     }
 
