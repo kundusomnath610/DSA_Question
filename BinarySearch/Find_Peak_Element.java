@@ -10,7 +10,7 @@ public class Find_Peak_Element {
         int low = 0;
         int high = nums.length - 1;
 
-    while (low < high) {
+        while (low < high) {
         // Calculate mid point to split the array
         int mid = low + (high - low) / 2;
 
@@ -29,26 +29,24 @@ public class Find_Peak_Element {
                 low = mid + 1;
             }
         } 
-    //     // Special case: if mid is at the start of the array
-    //     else if (mid == 0) {
-    //         if (nums[0] > nums[1]) {
-    //             return 0;
-    //         } else {
-    //             low = 1;
-    //         }
-    //     } 
-    //     // Special case: if mid is at the end of the array
-    //     else if (mid == nums.length - 1) {
-    //         if (nums[nums.length - 1] > nums[nums.length - 2]) {
-    //             return nums.length - 1;
-    //         } else {
-    //             high = nums.length - 2;
-    //         }
-    //     }
-    // }
-    // When low and high converge, low will be the peak element
-    
+        // Special case: if mid is at the start of the array
+        else if (mid == 0) {
+            if (nums[0] > nums[1]) {
+                return 0;
+            } else {
+                low = 1;
+            }
+        } 
+        // Special case: if mid is at the end of the array
+        else if (mid == nums.length - 1) {
+            if (nums[nums.length - 1] > nums[nums.length - 2]) {
+                return nums.length - 1;
+            } else {
+                high = nums.length - 2;
+            }
+        }
     }
-    return low;
-}
+        // When low and high converge, low will be the peak element
+        return low;
+    }
 }
