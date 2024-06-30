@@ -2,7 +2,7 @@ package BinarySearch;
 
 public class Minimum_Number_in_a_sorted_rotated_array {
     public static void main(String[] args) {
-        int[] array = {2,3,4,5,6,7,8,9,10,1};
+        int[] array = {2,3,4,5,6,7,8,9,10,1,9};
         System.out.println(minNumber(array, 2, 1));
     }
 
