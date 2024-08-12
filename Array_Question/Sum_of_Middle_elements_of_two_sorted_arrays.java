@@ -2,10 +2,13 @@ import java.util.ArrayList;
 
 public class Sum_of_Middle_elements_of_two_sorted_arrays {
     public static void main(String[] args) {
-        
+        int array1 [] = {1,2,3,4,5}; // 12345678
+        int array2[] = {6,7,8};
+
+        System.out.println(SumofMiddleElements(array1, array2));
     }
 
-      public int SumofMiddleElements(int[] arr1, int[] arr2) {
+      public static int SumofMiddleElements(int[] arr1, int[] arr2) {
         // Initialize an empty ArrayList to store the merged elements
         ArrayList<Integer> list = new ArrayList<>();
         
