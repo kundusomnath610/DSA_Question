@@ -1,23 +1,26 @@
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Recognize_the_array {
     public static void main(String[] args) {
-        int[] array = {-1, -1, 6, 1, 9, 3, 2, -1, 4, -1};
-        rearrange(array);
-        System.out.println(Arrays.toString(array));
+        int [] array = {-1, -1, 6, 1, 9, 3, 2, -1, 4, -1};
+       
     }
 
-    public static void rearrange(int[] arr) {
-        int n = arr.length;
-
-        for (int i = 0; i < n; i++) {
-            while (arr[i] != -1 && arr[i] != i) {
-                // Swap arr[i] with arr[arr[i]]
-                int temp = arr[i];
-                arr[i] = arr[temp];
-                arr[temp] = temp;
+    public static List<Integer> rearrange(List<Integer> arr) 
+    {
+        // Code here
+        List<Integer> list = new ArrayList<>();
+        int n = arr.size();
+        
+        for(int i=0; i<n; i++) {
+            list.add(-1);
+        }
+        for(int i=0; i<n; i++) {
+            if(arr.get(i) != -1) {
+                list.set(arr.get(i), arr.get(i));
             }
         }
+        return list;
     }
 }
-
