@@ -38,3 +38,7 @@ public class sortNumber {
     }
 }
 
+
+// Time com :- O(n)
+// Space com:- O(1)
+
