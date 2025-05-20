@@ -7,13 +7,8 @@ public class Valid_Parenthess {
         
     }
 
-    public static boolean ispar(String s) 
+    public static boolean ispar(String s)
     {
-        // add your code here
-        
-        // if(s.length() % 2 != 0) {
-        //     return false;
-        // }
         
         Stack<Character> stack = new Stack<>(); // for stack declereation
         
@@ -27,7 +22,7 @@ public class Valid_Parenthess {
                     return false;
                 }
                 
-                char top = stack.peek(); // find the stack peek..
+                char top = stack.peek(); // find the stack peek.
                 
                 if(ch == ')' && top != '(') { // current bracket and top bracket is not matched return false
                     return false;
